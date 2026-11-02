@@ -65,7 +65,11 @@ All times are UTC (= UK time during the competition week). This repository was c
 
 Three-game means: v37 = (71.04 + 69.67 + 71.93) / 3 = 70.88; v38 = (74.67 + 69.12 + 60.17) / 3 = 67.99. All six runs completed 48 months; none was dismissed at the first level.
 
-Score reports (as written by the official runner) are in `notes/evidence/`. `notes/CHANGELOG.md` is the development log kept during the week, one entry per game and change.
+Score reports (as written by the official runner) are in `notes/evidence/`.
+## Full per-step logs
+
+`notes/evidence/logs/game<no>_<version>/` holds, for each of the eight games above, the complete files the official runner wrote: `events-<start>.jsonl` (every observe result, every take_action call with its note, every model turn, with timestamps), `transcript-<start>.log` (the model's full text), and `score_report.json`. The directory name inside each folder is the run's start time in UTC.
+ `notes/CHANGELOG.md` is the development log kept during the week, one entry per game and change.
 
 ## What v37 and v38 are
 
