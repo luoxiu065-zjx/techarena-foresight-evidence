@@ -71,6 +71,16 @@ Score reports (as written by the official runner) are in `notes/evidence/`.
 `notes/evidence/logs/game<no>_<version>/` holds, for each of the eight games above, the complete files the official runner wrote: `events-<start>.jsonl` (every observe result, every take_action call with its note, every model turn, with timestamps), `transcript-<start>.log` (the model's full text), and `score_report.json`. The directory name inside each folder is the run's start time in UTC.
  `notes/CHANGELOG.md` is the development log kept during the week, one entry per game and change.
 
+## How the test games were run (tools and environment)
+
+- Runner: the official participation repository `techarena-career-sim` (upstream commit 00b084a, 26 Oct 2026), unmodified, via `python -m career_sim_runner play --submission <solution dir> --ws-url ws://127.0.0.1:<agent port>`. One local game at a time per JiuwenSwarm instance; each game starts from a fresh instance and an empty emulator database.
+- Framework and engine, identical on both machines: JiuwenSwarm 0.2.4b3 (single-agent mode, `"mode": "agent"`), career_emulator_engine 1.0.6, career_emulator_techarena 1.0.8, openjiuwen 0.1.16.post2, Python 3.12. The agent talked to the simulation only through the five official MCP tools.
+- Model: deepseek-v4-flash through OpenRouter (`API_BASE=https://openrouter.ai/api/v1`, `MODEL_NAME=deepseek-v4-flash`). The organiser-issued competition key was nearly exhausted by then, so these eight games used the team's own OpenRouter key with the same model name. In the OpenRouter account settings of that key the allowed hosting providers were limited to the fp8 endpoints (DeepInfra, GMICloud, SiliconFlow, Parasail, Crusoe) and Baidu Qianfan was excluded; this is an account-level setting of our test key only, nothing in the submission material names a provider. The JiuwenSwarm instance setting `preferred_language: zh` was in place, so part of the model's internal reasoning in the transcripts is in Chinese; the Skills and all notes written to the game are English.
+- Machine A (games 109 and 114): the team's Windows 11 laptop, JiuwenSwarm instance `career_emu`, agent port 19092.
+- Machine B (games 104, 105, 111, 112, 115, 116): a rented Tencent Cloud CVM in Frankfurt, Ubuntu 22.04.5 LTS, 8 vCPU, 15 GB RAM, four JiuwenSwarm instances `r1`-`r4` each with its own copy of the runner and its own emulator database; up to three games ran at the same time. Its system clock is UTC+8 (`~/ta/notes/run.log` lines are in that zone); the timestamps inside `events-*.jsonl` and the output folder names are UTC.
+- Per-game cost and token counts are in each `score_report.json` (`token_usage`). Typical full game: 50-90 M input tokens, 1.3-1.5 M tokens per month, USD 1.5-5 depending on which provider OpenRouter routed to.
+- Each game was watched only through its log files; no process touched the running instance, the database or the outputs while a game was in progress.
+
 ## What v37 and v38 are
 
 - v38 = v36 (the submitted version) with one change: the cap ledger for the promotion drivers is used only from the first promotion on (manifest rule 6, career-state-triage step 2).
