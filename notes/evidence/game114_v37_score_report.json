@@ -1,0 +1,84 @@
+{
+  "submission_name": "Foresight Agents",
+  "submission_dir": "D:\\Projects\\techarena-career-sim\\solution_v37",
+  "skill_name": "submission-skills",
+  "drive_session_id": "career-sim-runner-8a1a06ba1c8c",
+  "session_id": "2cd66a78acfb420a9e6bc79d7013cd21",
+  "play_exit_code": 0,
+  "termination_reason": null,
+  "token_usage": {
+    "input_tokens": 72256691,
+    "output_tokens": 183511,
+    "total_tokens": 72440202,
+    "total_cost": 5.253302,
+    "by_model": {
+      "deepseek-v4-flash": {
+        "input_tokens": 72256691,
+        "output_tokens": 183511,
+        "total_tokens": 72440202,
+        "total_cost": 5.253302
+      }
+    }
+  },
+  "ending_score": {
+    "competition_partial_score": 48.77,
+    "completed": true,
+    "dimensions": [
+      {
+        "label": "Career level",
+        "name": "level",
+        "normalized_score": 50.0,
+        "raw_value": 5.0,
+        "weight": 0.3,
+        "weighted_score": 15.0
+      },
+      {
+        "label": "Total wealth",
+        "name": "wealth",
+        "normalized_score": 46.5,
+        "raw_value": 37.2,
+        "weight": 0.2,
+        "weighted_score": 9.3
+      },
+      {
+        "label": "Health & dignity",
+        "name": "resilience",
+        "normalized_score": 100.0,
+        "raw_value": 20.0,
+        "weight": 0.15,
+        "weighted_score": 15.0
+      },
+      {
+        "label": "Professional skill",
+        "name": "skill",
+        "normalized_score": 95.83,
+        "raw_value": 115.0,
+        "weight": 0.15,
+        "weighted_score": 14.38
+      },
+      {
+        "label": "Risk control",
+        "name": "risk_control",
+        "normalized_score": 70.0,
+        "raw_value": 3.0,
+        "weight": 0.1,
+        "weighted_score": 7.0
+      },
+      {
+        "label": "Workplace network",
+        "name": "network",
+        "normalized_score": 90.0,
+        "raw_value": 54.0,
+        "weight": 0.1,
+        "weighted_score": 9.0
+      }
+    ],
+    "outcome": "completed",
+    "quantitative_score": 69.67,
+    "survival_months": 48
+  },
+  "output_dir": "D:\\Projects\\techarena-career-sim\\.career_sim_runner\\career_emu\\outputs\\Foresight Agents\\20261102T004422Z",
+  "events_log": "D:\\Projects\\techarena-career-sim\\.career_sim_runner\\career_emu\\outputs\\Foresight Agents\\20261102T004422Z\\events-20261102T004422Z.jsonl",
+  "transcript_log": "D:\\Projects\\techarena-career-sim\\.career_sim_runner\\career_emu\\outputs\\Foresight Agents\\20261102T004422Z\\transcript-20261102T004422Z.log",
+  "scored_at": "2026-11-02T01:29:45.745130+00:00"
+}

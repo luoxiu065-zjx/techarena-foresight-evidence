@@ -59,9 +59,11 @@ All times are UTC (= UK time during the competition week). This repository was c
 | 112 | v38 | server r3 | 2026-11-02 00:08 | 69.12, completed 48, L5 |
 | 104 | v36 | server r1 | 2026-11-01 22:40 | 73.47, completed 48, L5 |
 | 105 | v36 | server r3 | 2026-11-01 22:40 | 38.51, health zero at month 42 |
-| 114 | v37 | local instance 1 | 2026-11-02 00:44 | running when this file was written |
-| 115 | v37 | server r3 | 2026-11-02 00:52 | running |
-| 116 | v38 | server r4 | 2026-11-02 00:44 | running |
+| 114 | v37 | local instance 1 | 2026-11-02 00:44 | 69.67, completed 48, L5 |
+| 115 | v37 | server r3 | 2026-11-02 00:52 | 71.93, completed 48, L5 |
+| 116 | v38 | server r4 | 2026-11-02 00:44 | 60.17, completed 48, L5 |
+
+Three-game means: v37 = (71.04 + 69.67 + 71.93) / 3 = 70.88; v38 = (74.67 + 69.12 + 60.17) / 3 = 67.99. All six runs completed 48 months; none was dismissed at the first level.
 
 Score reports (as written by the official runner) are in `notes/evidence/`. `notes/CHANGELOG.md` is the development log kept during the week, one entry per game and change.
 

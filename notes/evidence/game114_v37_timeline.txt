@@ -1,0 +1,12 @@
+{'competition_partial_score': 48.77, 'completed': True, 'outcome': 'completed', 'quantitative_score': 69.67, 'survival_months': 48} cost 5.25 tok/month 1.51 M
+m 1 L1 H3 D6 S4 N3 O2 W1
+m 6 L2 H4 D10 S12 N7 O6 W2 <- promoted
+m12 L3 H7 D10 S22 N7 O7 W4 <- promoted
+m18 L3 H9 D10 S42 N19 O14 W8
+m24 L4 H10 D10 S47 N22 O19 W13 <- promoted
+m30 L4 H6 D10 S61 N36 O26 W18
+m36 L4 H10 D10 S75 N36 O24 W22
+m42 L5 H5 D10 S99 N38 O32 W27 <- promoted
+m48 L5 H10 D10 S114 N52 O35 W36
+m49 L5 H10 D10 S115 N54 O35 W37
+min Health over run: 3 | months with Health<=3: 2

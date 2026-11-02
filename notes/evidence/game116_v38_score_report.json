@@ -1,0 +1,84 @@
+{
+  "submission_name": "Foresight Agents",
+  "submission_dir": "/home/ubuntu/ta/solution_v38",
+  "skill_name": "submission-skills",
+  "drive_session_id": "career-sim-runner-ad52e92cdc84",
+  "session_id": "0c86fb7064784480a4871f7b5c9a6227",
+  "play_exit_code": 0,
+  "termination_reason": null,
+  "token_usage": {
+    "input_tokens": 72990368,
+    "output_tokens": 182306,
+    "total_tokens": 73172674,
+    "total_cost": 2.177301,
+    "by_model": {
+      "deepseek-v4-flash": {
+        "input_tokens": 72990368,
+        "output_tokens": 182306,
+        "total_tokens": 73172674,
+        "total_cost": 2.177301
+      }
+    }
+  },
+  "ending_score": {
+    "competition_partial_score": 42.12,
+    "completed": true,
+    "dimensions": [
+      {
+        "label": "Career level",
+        "name": "level",
+        "normalized_score": 50.0,
+        "raw_value": 5.0,
+        "weight": 0.3,
+        "weighted_score": 15.0
+      },
+      {
+        "label": "Total wealth",
+        "name": "wealth",
+        "normalized_score": 32.12,
+        "raw_value": 25.7,
+        "weight": 0.2,
+        "weighted_score": 6.43
+      },
+      {
+        "label": "Health & dignity",
+        "name": "resilience",
+        "normalized_score": 100.0,
+        "raw_value": 20.0,
+        "weight": 0.15,
+        "weighted_score": 15.0
+      },
+      {
+        "label": "Professional skill",
+        "name": "skill",
+        "normalized_score": 81.67,
+        "raw_value": 98.0,
+        "weight": 0.15,
+        "weighted_score": 12.25
+      },
+      {
+        "label": "Risk control",
+        "name": "risk_control",
+        "normalized_score": 50.0,
+        "raw_value": 5.0,
+        "weight": 0.1,
+        "weighted_score": 5.0
+      },
+      {
+        "label": "Workplace network",
+        "name": "network",
+        "normalized_score": 65.0,
+        "raw_value": 39.0,
+        "weight": 0.1,
+        "weighted_score": 6.5
+      }
+    ],
+    "outcome": "completed",
+    "quantitative_score": 60.17,
+    "survival_months": 48
+  },
+  "output_dir": "/home/ubuntu/ta_r4/.career_sim_runner/career_emu/outputs/Foresight Agents/20261102T004427Z",
+  "events_log": "/home/ubuntu/ta_r4/.career_sim_runner/career_emu/outputs/Foresight Agents/20261102T004427Z/events-20261102T004427Z.jsonl",
+  "transcript_log": "/home/ubuntu/ta_r4/.career_sim_runner/career_emu/outputs/Foresight Agents/20261102T004427Z/transcript-20261102T004427Z.log",
+  "scored_at": "2026-11-02T01:46:45.533326+00:00"
+}

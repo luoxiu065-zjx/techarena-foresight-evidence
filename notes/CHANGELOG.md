@@ -627,3 +627,13 @@ Behaviour changes, listed: (a) 'lowest open driver' -> 'open driver that rose le
 ## 00:46 UK — User rule: at most ONE game at a time locally, at most THREE on the server (memory). Game 115 (v37, i2) stopped at start; it will run on the server when 112 finishes.
 
 ## 00:57 UK — Game 111 (v38, server r1): 74.67, completed 48. v38: 74.67 / 69.12 + 116 running (mean so far 71.9). Server cost per game jumped (112: $4.63 vs 104: $1.96) = pricier provider routing; user warned, balance $10.10.
+
+## 01:20 UK — Evidence repo pushed (user request, to ask organisers about a late change): https://github.com/luoxiu065-zjx/techarena-foresight-evidence — solution_v28j/v36/v37/v38 (no video), CHANGELOG, score reports of games 104/105/109/111/112, README with submission ids, zip md5s and file mtimes. Commit 47109de 2026-11-02 01:19:45 UTC.
+
+## 01:32 UK — Game 114 (v37, local i1): 69.67, completed 48, L5 (m42). v37: 71.04 / 69.67 + 115 running (m30+ L4).
+
+## 01:47 UK — Game 116 (v38, server r4): 60.17, completed 48. v38 three games: 74.67 / 69.12 / 60.17 = mean 67.99 (<70). v37: 71.04 / 69.67 + 115 running.
+
+## 00:51 UK — Game 112 (v38, server r3): 69.12, completed 48, L5 (m42). v38: 69.12 + 111 (m35+ L4) + 116 (started 00:44). Game 115 = v37 restarted on server r3 (server now 111/115/116 = 3).
+
+## 01:56 UK — Game 115 (v37, server r3): 71.93, completed 48, L5 (m36), Skill 153 / Network 54 at the end, no L6. v37 three games: 71.04 / 69.67 / 71.93 = mean 70.88 (>70). v38: 74.67 / 69.12 / 60.17 = 67.99. Per user rule (mean > 70) -> ask organisers.
